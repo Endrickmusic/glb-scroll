@@ -20,12 +20,15 @@ function Model(props) {
 
   console.log(animations)
 
-  useEffect(() => {
-    actions[0].reset().play().paused = true
-  }, [])
-  useFrame(
-    () => (actions[0].time = actions[0].getClip().duration * scroll.offset)
-  )
+  // useEffect(() => {
+  //   actions.RUNMAN.reset().play()
+  // }, [])
+  // useEffect(() => {
+  //   actions[0].reset().play().paused = true
+  // }, [])
+  // useFrame(
+  //   () => (actions[0].time = actions[0].getClip().duration * scroll.offset)
+  // )
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
